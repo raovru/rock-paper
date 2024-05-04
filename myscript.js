@@ -76,16 +76,15 @@ function playRound(humanChoice, computerChoice) {
     }
 }
   
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+
 
 //code for running 5 times
 
 let i = 0;
 while(i<5){
-    getHumanChoice();
-    getComputerChoice();
-    playRound(humanSelection, computerSelection);
+    let humanChoice = getHumanChoice();
+    let computerChoice = getComputerChoice();
+    playRound(humanChoice, computerChoice);
     i+=1;
 }
 if(human_score>comp_score){
