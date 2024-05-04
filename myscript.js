@@ -103,4 +103,5 @@ else{
 function winner(){
     console.log("Your score: ",human_score);
     console.log("Computer score: ", comp_score);
+    console.log("No of draws: ", 5-(human_score+comp_score));
 }
